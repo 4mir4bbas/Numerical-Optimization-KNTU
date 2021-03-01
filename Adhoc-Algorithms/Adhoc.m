@@ -7,8 +7,7 @@ classdef Adhoc
         Period  % The period in which we want to find the minimum
         rho_gss = 0.382;  % Fixed rho for GSS algorithm
         rho_fibonacci = [];  % Variable rho for Fibonacci algorithm
-        ctr = 0;
-        fib = [];
+        fib = [];  % Fibonacci Sequence
         
     end
     

@@ -1,2 +1,2 @@
-# Numerical-Optimization-KNTU
-Computer Assignments of Numerical Optimization @ KNTU
+# Numerical Optimization
+Computer Assignments of Numerical Optimization course @ KNTU

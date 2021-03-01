@@ -59,11 +59,9 @@ classdef Adhoc
                 right_value = double(subs(obj.Function, right));
                 if left_value < right_value
                     obj.Period = [obj.Period(1), right];
-                    obj.ctr = obj.ctr + 1;
                     lastPeriod = gss(obj, precision);
                 else
                     obj.Period = [left, obj.Period(2)];
-                    obj.ctr = obj.ctr + 1;
                     lastPeriod = gss(obj, precision);
                 end 
             end

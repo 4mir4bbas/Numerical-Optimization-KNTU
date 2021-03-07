@@ -31,8 +31,8 @@ syms x;
 testCases = [ 1 , x^4 - 14*x^3 + 60*x^2 - 70*x , 0  , 2 , 'fibonacci-gss' , 0.3  ;  % Ex 7.2 Chong book page 98
               2 , 0.5*x^2 - sin(x)             , 0  , 2 , 'gss-fibonacci' , 1e-5 ;  % Ex 7.3 Chong book page 103        
               3 , (x-3)^2                      , 0  , 5 , 'fibonacci'     , 1e-3 ;  % Simple quadratic function
-              4 , (x+1)^2                      , -3 , 1 , 'gss'           , 1e-3 ;  % Simple quadratic function
-              5 , x                            , 2  , 4 , 'asd'           , 1   ];  % Error case
+              4 , (x+1)^2                      , -3 , 1 , 'gss'           , 1e-3];  % Simple quadratic function
+
 ctr = 1;
 while ctr <= size(testCases, 1)
     func = testCases(ctr,2);

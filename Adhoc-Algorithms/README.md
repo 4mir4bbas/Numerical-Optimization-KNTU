@@ -1,2 +1,3 @@
 # Ad-hoc Algorithms Implementation using MATLAB
-## Coded by: Amir Abbas Bakhshipour
+### Codes published under GNU GPLv3 license
+##### by: Amir Abbas Bakhshipour

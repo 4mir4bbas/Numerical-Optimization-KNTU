@@ -15,7 +15,7 @@ classdef LineSearch
     end
     
     methods
-        function obj = LineSearch()
+        function obj = untitled2()
             %UNTITLED2 Construct an instance of this class
             %   Detailed explanation goes here
             
@@ -32,26 +32,27 @@ classdef LineSearch
         
         
         
-        function minimizer = sd(obj)
+        function y = sd(obj)
             x0 = [1;
                   2];
             x = x0;
-            syms x1 x2 a;
             while true
-                dir = -subs(gradient(obj.rose()), [x1 x2], [x(1), x(2)]);
-                func = subs(obj.rose(), [x1; x2], x+a.*dir);
-                AdhocObj = Adhoc(func, [0 1]);
-                [periodSt, periodNd, ~, ~] = AdhocObj.iterativeGss(0.1);
+                dir = -obj.rosenbrockGradient(x);
+                AdhocObj = Adhoc(obj.rose(), [0 1]);
+                [periodSt, periodNd, ~, ~] = AdhocObj.iterattiveGss(0.1);
                 alpha_k = (periodSt+periodNd)/2;
                 tmp = x;
                 x = x + alpha_k.*dir;
-                if norm(x-tmp)<0.1
-                    break;
-                end
+                if abs(x-tm
+                
+                
             end
-            minimizer = x;
         end
-        
+        function outputArg = method1(obj,inputArg)
+            %METHOD1 Summary of this method goes here
+            %   Detailed explanation goes here
+            outputArg = obj.Property1 + inputArg;
+        end
     end
 end
 
